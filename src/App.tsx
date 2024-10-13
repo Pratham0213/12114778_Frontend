@@ -72,7 +72,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dashboard App</h1>
+      <h1>HOTEL-Dashboard </h1>
       <DateSelector selectedDateRange={selectedDateRange} onDateRangeChange={setSelectedDateRange} />
       <TimeSeriesChart entries={filteredEntries} />
       <ColumnChart data={filteredEntries} />
