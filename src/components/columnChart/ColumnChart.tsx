@@ -10,6 +10,8 @@ const ColumnChart: React.FC<{ data: any[] }> = ({ data }) => {
     }
     return acc;
   }, []);
+ 
+
   
   const visitorCounts = countryNames.map((country: string) => {
     const count = data.reduce((acc, entry) => {
@@ -55,5 +57,7 @@ const ColumnChart: React.FC<{ data: any[] }> = ({ data }) => {
     </div>
   );
 };
+ console.log('Countries:', countries);
+console.log('Series Data:', series);
 
 export default ColumnChart;
